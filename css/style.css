@@ -1,12 +1,16 @@
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(236, 211, 211, 0.685);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
-.pb-1, .py-1 {
-    padding-bottom: .25rem!important;
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
 }
-.pt-1, .py-1 {
-    padding-top: .25rem!important;
+.pb-2, .py-2 {
+    padding-bottom: .5rem!important;
+}
+.pt-2, .py-2 {
+    padding-top: .5rem!important;
 }
