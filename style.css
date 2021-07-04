@@ -1,0 +1,12 @@
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.pb-1, .py-1 {
+    padding-bottom: .25rem!important;
+}
+.pt-1, .py-1 {
+    padding-top: .25rem!important;
+}
