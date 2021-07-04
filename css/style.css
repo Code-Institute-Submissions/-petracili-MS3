@@ -55,3 +55,23 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: rgba(236, 211, 211, 0.781);
+}
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: rgba(236, 211, 211, 0.781)333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
