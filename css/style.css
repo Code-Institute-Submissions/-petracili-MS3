@@ -84,12 +84,15 @@ h1 {
     padding-top: 30px;
     width: 33%;
     float: left;
+    background-color: rgba(236, 211, 211, 0.781)333 ;
+
 }
 
 #right-about{
     padding-top: 30px;
     width: 33%;
     float: right;
+    background-color: rgba(236, 211, 211, 0.781)333;
 }
 
 #center-about{
