@@ -99,3 +99,11 @@ h1 {
     width: 33%;
     margin: 0 auto;
 }
+
+.left-about-info{
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
