@@ -75,3 +75,7 @@ h1 {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
 }
+
+#copyright {
+    background-color: rgba(236, 211, 211, 0.781);
+}
