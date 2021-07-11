@@ -91,7 +91,6 @@ h1 {
     padding-top: 30px;
     width: 33%;
     float: right;
-    background-color: rgba(236, 211, 211, 0.781)333;
 }
 
 #center-about {
@@ -119,4 +118,12 @@ hr{
     line-height: 20%;
     clear: both;
     margin-bottom: 50px;
+}
+
+.right-about-info h2{
+    text-align: right;
+}
+
+.right-about-info p {
+    text-align: right;
 }
