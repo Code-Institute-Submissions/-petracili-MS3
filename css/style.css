@@ -112,3 +112,11 @@ hr{
     clear: both;
     margin-bottom: 50px;
 }
+
+.right-about-info{
+    width: 50%;
+    float: left;
+    line-height: 20%;
+    clear: both;
+    margin-bottom: 50px;
+}
