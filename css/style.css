@@ -151,6 +151,25 @@ h1 {
     border-radius: 50%;
   }
 
+  footer{
+    height: 150px;
+  }
+  
+  .social-networks{
+    text-align: center;
+  }
+  
+  .social-networks li{
+    display: inline;
+  }
+  
+  .social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color:#777777;
+  }
+
   .footer-copyright {
     color: rgb(150, 146, 146);
     background-color: rgba(236, 211, 211, 0.781);
