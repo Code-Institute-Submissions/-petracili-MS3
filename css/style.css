@@ -78,52 +78,75 @@ h1 {
 
 #club-ethos {
     height: 600px;
-}
-
-#left-about {
+  }
+  
+  #left-about {
     padding-top: 30px;
     width: 33%;
-    float: left;
-    
-}
-
-#right-about {
+    float: left; 
+  }
+  
+  #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-}
-
-#center-about {
+  }
+  
+  #center-about {
     width: 33%;
     margin: 0 auto;
-}
-
-hr{
+  }
+  
+  hr{
     border-top: 1px solid rgb(150, 146, 146);
     width: 100%;
-    margin: 5px 0 ;
-}
-
-.left-about-info {
+    margin: 5px 0;
+  }
+  
+  .left-about-heading{
     width: 50%;
     float: right;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-}
-
-.right-about-info{
+  }
+  
+  .right-about-heading {
     width: 50%;
-    float: left;
-    line-height: 20%;
+    float: laft;
+    line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-}
-
-.right-about-info h2{
+  }
+  
+  .right-about-heading h2{
     text-align: right;
-}
-
-.right-about-info p {
+  }
+  
+  .right-about-heading p{
     text-align: right;
-}
+  }
+  
+  
+  #welcome {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 280%;
+  }
+  
+  #circle-container {
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgba(236, 211, 211, 0.781);
+    border-width: 3px;
+    border-radius: 50%;
+    margin: 30% auto;
+  }
+  
+  #circle-cover-bg {
+    background: url("https://i1.wp.com/baggybulldogs.com/wp-content/uploads/2019/12/kisspng-dorset-olde-tyme-bulldogge-american-bulldog-pug-bo-pian-5b372887367ff0.0255521815303415112233.png?resize=300%2C333&ssl=1") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+  }
