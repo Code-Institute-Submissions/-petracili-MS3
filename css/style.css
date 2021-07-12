@@ -70,7 +70,7 @@ h1 {
     bottom: -30%;
     width: 300px;
     height: 540px;
-    background-color: rgba(236, 211, 211, 0.781)333;
+    background-color: rgba(236, 211, 211, 0.781);
     border-radius: 21px;
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
@@ -150,3 +150,9 @@ h1 {
     height: 100%;
     border-radius: 50%;
   }
+
+  .footer-copyright {
+    color: rgb(150, 146, 146);
+    background-color: rgba(236, 211, 211, 0.781);
+    height: 45px;
+}
