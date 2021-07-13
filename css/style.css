@@ -183,14 +183,19 @@ p {
     padding: 0;
     font-family: "Source Sans Pro", sans-serif;
 }
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
+
 p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+#bcolor{
+  background-color: rgba(236, 211, 211, 0.781);
 }
