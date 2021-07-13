@@ -196,6 +196,7 @@ p {
     margin-inline-end: 0px;
 }
 
-#bcolor{
-  background-color: rgba(236, 211, 211, 0.781);
+#bcolor {
+  background-color: rgba(236, 211, 211, 0.781) !important;
+  color: rgb(150, 146, 146);
 }
