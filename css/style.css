@@ -209,3 +209,9 @@ p {
 .btn btn-primary{
   color: rgb(150, 146, 146);
 }
+
+.services_img{
+
+  width: 100% !important;
+  height: 200px;
+}
