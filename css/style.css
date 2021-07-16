@@ -217,6 +217,6 @@ p {
 }
 
 .puppy_img{
-  width: 100%;
-  height: 500px;
+  width: 50% !important;
+  height: 300px;
 }
