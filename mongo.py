@@ -18,9 +18,20 @@ def mongo_connect(url):
         print("Could not connect to MongoDB: %s") % e
 
 
-conn = mongo_connect(MONGO_URI)
+conn = mongo_connect(MONGO_URL)
 
 coll = conn[DATABASE][COLLECTION]
+
+new_docs = [{
+    "first": "dona",
+    "last": "bully",
+    "dob": "08/04/2021",
+    "gender": "f",
+    "hair_color": "f"
+    "nationality": "irish"
+},{
+    "first": ""
+}]
 
 documents = coll.find()
 
