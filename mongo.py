@@ -27,10 +27,43 @@ new_docs = [{
     "last": "bully",
     "dob": "08/04/2021",
     "gender": "f",
-    "hair_color": "f"
+    "hair_color": "red",
     "nationality": "irish"
 },{
-    "first": ""
+    "first": "alek",
+    "last": "bully", 
+    "dob": "08/04/2021",
+    "gender": "m",
+    "hair_color": "red",
+    "nationality": "irish"
+},{
+    "fisrt": "lina",
+    "last": "bully",
+    "dob": "08/04/2021",
+    "gender": "f",
+    "hair_color": "red",
+    "nationality": "irish"
+},{
+    "fisrt": "Mic",
+    "last": "bully",
+    "dob": "08/04/2021",
+    "gender": "m",
+    "hair_color": "red",
+    "nationality": "irish"
+},{
+    "fisrt": "lina",
+    "last": "bully",
+    "dob": "08/04/2021",
+    "gender": "f",
+    "hair_color": "red",
+    "nationality": "irish"
+},{  
+    "fisrt": "lina",
+    "last": "bully",
+    "dob": "08/04/2021",
+    "gender": "f",
+    "hair_color": "red",
+    "nationality": "irish"
 }]
 
 documents = coll.find()
