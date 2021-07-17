@@ -1,58 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-
-    <title>Project 3</title>
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("user_xKMlyK4S0o5h08XSJvtF7");
-
-    })();
-    </script>
-  </head>
-  <body>
-
-<!--Nav Bar and Logo-->
-
- <nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2" aria-label="Product"> <i class="fas fa-dog"></i></a>
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
-      <a class="py-2 d-none d-md-inline-block" href="champion.html">Champion</a>
-      <a class="py-2 d-none d-md-inline-block" href="puppy.html">Puppy</a>
-      <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact Us</a>
-    </div>
-  </nav>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 font-weight-normal">
-        <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;">KingBull the Bulldog</font>
-        </font>
-      </h1>
-      <p class="lead font-weight-normal">
-        <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;">An English bulldog, a cute sloth who will steal your heart without a problem. </font>
-          <font style="vertical-align: inherit;">Enter the world of these beautiful wrinkled sloths and learn more about the breed that has been a trademark of many campsites in recent years.</font>
-        </font>
-      </p>
-    </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
-
+{% extends "base.html" %}
+{% block content %}
 <!--Pupy Part-->
 
 <div class="album py-5 bg-light">
@@ -163,34 +110,7 @@
 
         </div>
       </div>
-    </div>
+</div>
 
-<!--Footer--->
-
-    <footer>
-      <!--<div id="copyright" class="footer-copyright text-center user-select-none py-3 mt-2" id="copyright">Petra Cili © 2021 KingBulld the Bulldog </div>-->
-      <ul class="social-networks">
-          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-          <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </footer>
-
-    <script src="sendEmail.js"></script>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
-
+  {% endblock %}
 
