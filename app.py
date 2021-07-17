@@ -25,6 +25,10 @@ mongo = PyMongo(app)
 def index():
     return render_template("index.html")
 
+@app.route("/")
+def index():
+    return render_template("champion.html")
+
 
 
 if __name__ == "__main__":
