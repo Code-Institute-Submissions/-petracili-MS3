@@ -6,110 +6,28 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
+        {% for bully in bully_list %}
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
 
-            <img src="images.puppy/puppy2.jpg" class="card-img-top puppy_img"></img>
+              <img src="{{bully.img}}" class="card-img-top puppy_img"></img>
 
-            <div class="card-body">
-              <p class="card-text"></p>
-              <h4>Dona</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <h4>{{bully.first}}</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  </div>
+                  <small class="text-muted"> {{bully.gender}}</small>
+                  <small class="text-muted"> {{bully.hair_color}}</small>
+                  <small class="text-muted"> {{bully.dob}}</small>
                 </div>
-                <small class="text-muted"> Girl</small>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-
-            <img src="images.puppy/puppy3.jpg" class="card-img-top puppy_img"></img>
-
-            <div class="card-body">
-              <p class="card-text"></p>
-              <h4>Alek</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-muted">Boy</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-
-            <img src="images.puppy/puppy4.jpg" class="card-img-top puppy_img"></img>
-
-            <div class="card-body">
-              <p class="card-text"></p>
-              <h4>Lina</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-muted">Girl</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-
-            <img src="images.puppy/puppy5.jpg" class="card-img-top puppy_img"></img>
-
-            <div class="card-body">
-              <p class="card-text"></p>
-              <h4>Mic</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-muted">Boy</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-
-            <img src="images.puppy/puppy6.jpg" class="card-img-top puppy_img"></img>
-
-            <div class="card-body">
-              <p class="card-text"></p>
-              <h4>Xena</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-muted">Girl</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-
-            <img src="images.puppy/puppy11.jpg" class="card-img-top puppy_img"></img>
-
-            <div class="card-body">
-              <p class="card-text"></p>
-              <h4>Ena</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-                <small class="text-muted">Girl</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        </div>
+        {% endfor %}
       </div>
+    </div>
 </div>
 
 {% endblock %}
