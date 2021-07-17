@@ -25,9 +25,21 @@ mongo = PyMongo(app)
 def index():
     return render_template("index.html")
 
-@app.route("/")
-def index():
-    return render_template("champion.html")
+
+@app.route("/champion")
+def champion():
+    chempion_list = list(mongo.db.chempion.find())
+    return render_template("champion.html", chempion_list=chempion_list) 
+
+@app.route("/puppy")
+def puppy():
+    bully_list = list(mongo.db.bully.find())
+    return render_template("puppy.html", bully_list=bully_list) 
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html") 
+
 
 
 
