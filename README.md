@@ -80,3 +80,21 @@ It provides a database of pictures of different dogs which can be searched, view
 * Responsive images to ensure they fit within the designated spaces, no matter what device is being used or the size of the screen
 * All features appropriate size and responsive for mobile and desktop viewing
 * All information is appropriate and relative to the subject and not misleading or hard to find
+
+-----------------
+
+#### **Wireframing**
+
+###### Home Page 
+
+<img src="assets/readme/homepage.PNG" />
+
+> Navigation bar at the top of the page,big Logo on the middle and small text under the logo.
+> The home page has a few parts with text. About the Breed, History and Important info around circular images of bread.
+> And Footer part on the end with icon for different social network.
+
+###### Champion Page 
+
+<img src="">
+
+> Champion part 
