@@ -87,7 +87,7 @@ It provides a database of pictures of different dogs which can be searched, view
 
 ###### Home Page 
 
-<img src="assets/readme/homepage.PNG" />
+<img src="assets/readme/first.PNG" />
 
 > Navigation bar at the top of the page,big Logo on the middle and small text below the logo.
 > The home page has a few parts with text. About the Breed, History and Important info around circular images of bread.
@@ -97,7 +97,7 @@ It provides a database of pictures of different dogs which can be searched, view
 
 ###### Champion Page 
 
-<img src="">
+<img src="assets/readme/CHAMPION.PNG">
 
 > Champion part has same navigation, logo and smala text under logo.
 > The difference is that this page has 6 pictures of dogs. Each dog have a description below pictured.
@@ -106,7 +106,7 @@ It provides a database of pictures of different dogs which can be searched, view
 
 ###### Puppy Page 
 
-<img src="">
+<img src="assets/readme/PUPPY.PNG">
 
 > Pupppy part has same navigation, logo and smala text under logo.
 > The difference is that this page has 6 pictures of puppy. Each dog have a description below pictured.
@@ -115,7 +115,7 @@ It provides a database of pictures of different dogs which can be searched, view
 
 ###### Contact Page 
 
-<img src="">
+<img src="assets/readme/contact.PNG">
 
 > Contact Page have form for send email.
 
