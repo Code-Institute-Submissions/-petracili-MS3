@@ -174,7 +174,7 @@ CSS code validated on - https://jigsaw.w3.org/css-validator/
 
 - Upon sending a message through the contact form, the site visitor will receive an automated email response to the email address they have provided previously in the form. I Tested this functionality on my email accounts. The right is the email provided while filling the form. This has got the automated message after clicking send.
 
-<img src="assets/images.readme/testing.PNG" />
+<img src="assets/readme/testing.PNG" />
 
 A member of Code Institute Anna Greaves has mentioned this handy tool in her ["How to README.md"](https://www.youtube.com/watch?v=7BteidgLAyM&feature=youtu.be&ab_channel=CodeInstitute) online webinar.
 
