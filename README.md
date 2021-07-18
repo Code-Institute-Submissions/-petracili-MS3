@@ -155,3 +155,59 @@ It provides a database of pictures of different dogs which can be searched, view
 - [MongoDB](https://en.wikipedia.org/wiki/MongoDB) - te create database and conect with gitpod
 - [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
 - [Materialize](https://materializecss.com/about.html)
+
+
+#### Adding Email JS 
+
+Adding this functionality to a website was covered in the Interactive Frontend Development module of the course. Those few videos were a great help. Firstly you have to be registered to this service then you will be able to link it with an existing email address. The official EmailJS documentation is also crucial to understand what has to be done in order to get everything in working order. You can find the documentation [here](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/).
+
+### **Version Control**
+
+I used Git for version control and uploading the project to GitHub.
+My GitHub repository for this project is accessible [here](https://petracili.github.io/MS2/).
+
+### Testing write-up
+
+HTML code validated on - https://validator.w3.org/
+
+CSS code validated on - https://jigsaw.w3.org/css-validator/
+
+- Upon sending a message through the contact form, the site visitor will receive an automated email response to the email address they have provided previously in the form. I Tested this functionality on my email accounts. The right is the email provided while filling the form. This has got the automated message after clicking send.
+
+<img src="assets/images.readme/testing.PNG" />
+
+A member of Code Institute Anna Greaves has mentioned this handy tool in her ["How to README.md"](https://www.youtube.com/watch?v=7BteidgLAyM&feature=youtu.be&ab_channel=CodeInstitute) online webinar.
+
+### Deployment
+
+ 1. On GitHub, navigate to your site's repository.
+ 2. Under your repository name, click **Settings**.
+ 3. Under "GitHub Pages", use the **None** or **Branch** drop-down menu and select a publishing source.
+ 4. Optionally, use the drop-down menu to select a folder for your publishing source.
+ 5. Click **Save**.
+
+### Cloning this repository
+
+If you'd like to see and work on my code locally feel free to clone the repository. When you clone a repository, you copy the repository from GitHub to your local machine. 
+1. On GitHub, navigate to the main page of the repository.
+2. Above the list of files, click **Code**.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click . To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click **Use SSH**, then click . To clone a repository using GitHub CLI, click **Use GitHub CLI**, then click .
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type `git clone`, and then paste the URL you copied earlier.
+
+   ```shell
+   $ git clone gh repo clone petracili/MS3
+   ```
+
+7. Press **Enter** to create your local clone.
+
+GitHub documentation on cloning repository includes other methods to using the console. You can read more [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+### Credits
+
+***Antonio Rodrigez*** - My mentor at Code Institute - for general feedback and guidance, special guidance on DataBase
+
+***Matt Rudge*** - Lecturer/Developer at Code Institute - for the [template](https://github.com/Code-Institute-Org/gitpod-full-template) used with GitPod IDE for developing this project, and the lecture on Email JS
+
+***Anna Greaves*** - Developer at Code Institute - for the ["How to README.md"](https://www.youtube.com/watch?v=7BteidgLAyM&feature=youtu.be&ab_channel=CodeInstitute) webinar
