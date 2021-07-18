@@ -17,17 +17,12 @@ Code Institute Diploma in Full-Stack Software Development Project 3
     1. [Skeleton](#skeleton)
     1. [Surface](#surface)
 1. [Features](#features)
-    1. [Existing Features](#existing-features)
     1. [Features left to implement](#left-to)
-1. [Bugs](#bugs)
-1. [Technologies used](#tech)
 1. [Testing](#testing)
 1. [Deployment](#deployment)
     1. [Github Pages](#github)
-    1. [heroku](#heroku)
 1. [Credits](#credits)
-    1. [Content](#content)
-    1. [Acknowledgements](#acks)
+
 
 # <a name="summary"></a> Summary
 This is page is created to help new owners how bread need to look and what is best for them.
@@ -166,6 +161,7 @@ Adding this functionality to a website was covered in the Interactive Frontend D
 I used Git for version control and uploading the project to GitHub.
 My GitHub repository for this project is accessible [here](https://petracili.github.io/MS2/).
 
+# <a name="Testing"></a> Testing
 ### Testing write-up
 
 HTML code validated on - https://validator.w3.org/
