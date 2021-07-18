@@ -28,3 +28,8 @@ Code Institute Diploma in Full-Stack Software Development Project 3
 1. [Credits](#credits)
     1. [Content](#content)
     1. [Acknowledgements](#acks)
+
+# <a name="summary"></a> Summary
+This is page is created to help new owners how bread need to look and what is best for them.
+
+It provides a database of pictures of different dogs which can be searched, viewed, added to, removed from and edited.
