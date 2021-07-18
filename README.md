@@ -89,12 +89,30 @@ It provides a database of pictures of different dogs which can be searched, view
 
 <img src="assets/readme/homepage.PNG" />
 
-> Navigation bar at the top of the page,big Logo on the middle and small text under the logo.
+> Navigation bar at the top of the page,big Logo on the middle and small text below the logo.
 > The home page has a few parts with text. About the Breed, History and Important info around circular images of bread.
 > And Footer part on the end with icon for different social network.
+
+--------------------------
 
 ###### Champion Page 
 
 <img src="">
 
-> Champion part 
+> Champion part has same navigation, logo and smala text under logo.
+> The difference is that this page has 6 pictures of dogs. Each dog have a description below pictured.
+
+--------------------------
+
+###### Puppy Page 
+
+<img src="">
+
+> Pupppy part has same navigation, logo and smala text under logo.
+> The difference is that this page has 6 pictures of puppy. Each dog have a description below pictured.
+
+---------------------------
+
+###### Contact Page 
+
+<img src="">
