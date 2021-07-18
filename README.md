@@ -116,3 +116,42 @@ It provides a database of pictures of different dogs which can be searched, view
 ###### Contact Page 
 
 <img src="">
+
+> Contact Page have form for send email.
+
+---------------------------
+
+#### **Colors scheme and typography**
+
+ I have used the Noto Sans from Google Fonts. I have chosen the Noto Sans because it's handwriting calligraphy style for the title. Every other visible text is using Noto Sans.
+
+ The site heavily relies on imagery so I wanted to find a balance between colors. I chose a light pink and white that is soothing and encourages creativity, which I think is a great choice for a page that focuses on a peopel's best friends.
+
+
+-----------------
+
+#### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+
+#### Frameworks, Libraries & Programs Used
+
+- Google Maps Marker Clusterer
+- Git Version Control 
+- GitHub - to host the repository and the live site
+- [Bootstrap](https://getbootstrap.com/) 
+- [Email JS](https://www.emailjs.com/) - for making the contact form alive
+- [FontAwesome](https://fontawesome.com/) - for the icons used
+- [W3Schools Online Web Tutorials](https://www.w3schools.com) - for easier handling of codes
+- [Animate.css](https://animate.style/) - for animating element on the landing page 
+- [Google Fonts:](https://fonts.google.com/) - for font on webpage
+- [HTML Color Codes:](https://htmlcolorcodes.com/) - for color codes and names
+- Code Institute - for reminder of how the element is used
+- [Grammarly](https://www.grammarly.com) - to correct grammar
+- [MongoDB](https://en.wikipedia.org/wiki/MongoDB) - te create database and conect with gitpod
+- [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
+- [Materialize](https://materializecss.com/about.html)
