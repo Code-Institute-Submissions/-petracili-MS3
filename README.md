@@ -57,6 +57,26 @@ It provides a database of pictures of different dogs which can be searched, view
 * A search Function
 #### To ensure the database is up to date and editable:
 * Function to add a dog
-* Function to edit a dog
 * Function to delete a dog
-* For the dogs to be only editable by the creator
+
+
+**Content requirements:**
+#### To ensure the site is visually appealing and to draw the user's eye:
+* Images of adolt dog and puppy
+* Clear, crisp colours which do not detract from or make the text unreadable
+
+### For usability
+* For the time commitment to be clear as this is often a factor in a dog choice
+
+## <a name="structure"></a> Structure
+**Interaction design:**
+* User friendly interface to ensure usability and to encourage the user to return
+* Responsive and visible links which change on hover to provide user feedback as they navigate the site
+
+**Information Architecture:**
+* Navigation bar at the top of the page
+* Footer at the bottom of the page - sticky to the bottom so it is only visible when the bottom of the page is reached
+* Responsive navigation bar - adjusting for mobile for ease of use
+* Responsive images to ensure they fit within the designated spaces, no matter what device is being used or the size of the screen
+* All features appropriate size and responsive for mobile and desktop viewing
+* All information is appropriate and relative to the subject and not misleading or hard to find
