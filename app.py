@@ -29,11 +29,13 @@ def index():
 @app.route("/champion")
 def champion():
     chempion_list = list(mongo.db.chempion.find())
+    print('Chempion list is ', chempion_list)
     return render_template("champion.html", chempion_list=chempion_list) 
 
 @app.route("/puppy")
 def puppy():
     bully_list = list(mongo.db.bully.find())
+    print('Bully list is ', bully_list)
     return render_template("puppy.html", bully_list=bully_list) 
 
 @app.route("/contact")
