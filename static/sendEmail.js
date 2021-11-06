@@ -15,7 +15,3 @@ function sendMail(contactForm) {
 
     return false;
 }
-
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
