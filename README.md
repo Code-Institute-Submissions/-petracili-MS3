@@ -1,4 +1,4 @@
-<h1 align="center">KingBull the Bulldog</h1>
+<h1 aligin="center">KingBull the Bulldog</h1>
 
 Code Institute Diploma in Full-Stack Software Development Project 3
 
@@ -6,7 +6,7 @@ Code Institute Diploma in Full-Stack Software Development Project 3
 
 <img src="assets/readme/homepage.PNG" />
 
-### View the live project: https://github.com/petracili/MS3.git
+### View the live project: https://aqueous-basin-06126.herokuapp.com/
 
 ## Contents
 1. [Summary](#summary)

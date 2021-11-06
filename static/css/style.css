@@ -65,15 +65,15 @@ h1 {
 }
 
 .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: rgba(236, 211, 211, 0.781);
-    border-radius: 21px;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+  position: relative;
+  width: 34% !important;
+  height: 250px;
+  background-color: rgba(236, 211, 211, 0.781);
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(120deg);
+  overflow-y: hidden;
+  z-index: -1;
 }
 
 #club-ethos {
@@ -97,11 +97,6 @@ h1 {
     margin: 0 auto;
   }
   
-  hr{
-    border-top: 1px solid rgb(150, 146, 146);
-    width: 100%;
-    margin: 5px 0;
-  }
   
   .left-about-heading{
     width: 50%;
@@ -218,4 +213,42 @@ p {
 
 @media screen and (min-width: 480px) {
  
+}
+
+
+.home_info hr{
+  border-top: 1px solid rgb(150, 146, 146);
+  width: 80%;
+  margin-left: 10%;
+}
+
+.home_info h2, .home_info p{
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+.base_info{
+  background-color: rgba(150, 146, 146, 0.1);
+  background-image: url('../images.puppy/bg.png');
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.base_info .col{
+  padding-bottom: 30px;
+}
+
+.base_info h1, .base_info p, .base_info a{
+  color: black;
+  text-align: center;
+  vertical-align: center;
+}
+
+.top_info{
+  background-color: rgba(150, 146, 146, 0.1);
+  padding-top: 30px;
+  height: 450px;
+  overflow-y: scroll;
 }
