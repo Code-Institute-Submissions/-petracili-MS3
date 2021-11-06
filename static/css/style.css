@@ -215,3 +215,7 @@ p {
   width: 100% !important;
   height: 450px;
 }
+
+@media screen and (min-width: 480px) {
+ 
+}
