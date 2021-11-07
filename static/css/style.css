@@ -252,3 +252,8 @@ p {
   height: 450px;
   overflow-y: scroll;
 }
+
+.card-img-top, services_img {
+  height:450px;
+  width: auto;
+}
