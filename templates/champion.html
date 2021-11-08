@@ -1,32 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 <!--Champion Part-->
-
-<div class="card-deck">
-  <div class="container" id="classesypage">
-
-
-    <div class="row">
-      {% for chempion in chempion_list %}
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-
-          <img src="{{chempion.img}}" class="card-img-top services_img" alt="{{chempion.title}}"/>
-
-          <div class="card-body">
+<div class="container-fluid" id="classesypage">
+  <div class="row">
+    {% for chempion in chempion_list %}
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{chempion.img}}" alt="{{chempion.title}}" class="champion"/>
+          </div>
+          <div class="card-content champion-content">
             <h5 class="card-title">{{chempion.title}}</h5>
             <p class="card-text services_text">{{chempion.text}}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a button id="bcolor" class="btn btn-sm btn-outline-secondary" href="/contact">CONTACT US</a>
-              </div>
-            </div>
+          </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn" href="/contact">CONTACT US</a>
           </div>
         </div>
-    </div>
-
-   {% endfor %}
-   </div>
- </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
  {% endblock %}
