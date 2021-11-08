@@ -132,12 +132,13 @@ h1 {
   #circle-container {
     width: 400px;
     height: 450px;
-    padding: 10px;
+    padding: 40px;
     border-style: solid;
     border-color: rgba(236, 211, 211, 0.781);
     border-width: 3px;
     border-radius: 50%;
-    margin: 30% auto;
+    margin: auto;
+    position: auto;
   }
   
   #circle-cover-bg {
@@ -211,21 +212,16 @@ p {
   height: 450px;
 }
 
-@media screen and (min-width: 480px) {
- 
-}
-
-
 .home_info hr{
   border-top: 1px solid rgb(150, 146, 146);
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 10%;
 }
 
 .home_info h2, .home_info p{
   width: 80%;
   margin-left: 10%;
-
 }
 
 .base_info{
@@ -251,9 +247,4 @@ p {
   padding-top: 30px;
   height: 450px;
   overflow-y: scroll;
-}
-
-.card-img-top, services_img {
-  height:450px;
-  width: auto;
 }
