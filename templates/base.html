@@ -37,6 +37,14 @@
         <li><a href="/champion">Champion</a></li>
         <li><a href="/puppy">Puppy</a></li>
         <li><a href="/contact">Contact Us</a></li>
+        {% if not session.user %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Log in</a></li>
+        {%endif%}
+        {% if session.user %}
+          <li><a href="/profile/{{session.user}}">Profile</a></li>
+          <li><a href="/logout">Log out</a></li>
+        {%endif%}
       </ul>
     </div>
   </nav>
@@ -45,8 +53,28 @@
     <li><a href="/champion">Champion</a></li>
     <li><a href="/puppy">Puppy</a></li>
     <li><a href="/contact">Contact Us</a></li>
+    {% if not session.user %}
+      <li><a href="/register">Register</a></li>
+      <li><a href="/login">Log in</a></li>
+    {%endif%}
+    {% if session.user %}
+      <li><a href="/profile/{{session.user}}">Profile</a></li>
+      <li><a href="/logout">Log out</a></li>
+    {%endif%}
   </ul>
 
+
+  <div class="container-fluid">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="card-panel">
+            <span class="red-text text-darken-2">{{ message }}</span>
+          </div>  
+        {% endfor %}
+      {% endif %} 
+    {% endwith %}
+  </div>
   <div class="container-fluid">
     <div class="row base_info">
       <div class="col s12">
