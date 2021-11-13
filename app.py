@@ -29,8 +29,8 @@ def index():
 @app.route("/champion")
 def champion():
     chempion_list = list(mongo.db.chempion.find())
-    print('Chempion list is ', chempion_list)
-    return render_template("champion.html", chempion_list=chempion_list) 
+    user = mongo.db.users.find_one({"username": session["user"]})
+    return render_template("champion.html", chempion_list=chempion_list, user=ObjectId(user["_id"])) 
 
 @app.route("/puppy")
 def puppy():
@@ -41,6 +41,24 @@ def puppy():
 @app.route("/contact")
 def contact():
     return render_template("contact.html") 
+
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    if request.method == "POST":
+        query = request.form.get("query")
+        chempion = list(mongo.db.chempion.find({"$text": {"$search": query}}))
+        all_chempion = list(mongo.db.chempion.find())
+        print(chempion)
+        for chempion in chempion:
+            try:
+                recipe["user_id"] = mongo.db.users.find_one(
+                    {"_id": recipe["user_id"]})["username"]
+            except:
+                pass
+        return render_template("search.html", chempion=chempion)
+
+    return render_template("search.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -111,6 +129,45 @@ def logout():
     flash("You've been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+@app.route("/add_chempion", methods=["GET", "POST"])
+def add_chempion():
+    if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
+        new_chempion = {
+            "img": request.form.get("chempion_img"),
+            "title": request.form.get("chempion_title"),
+            "text": request.form.get("chempion_text"),
+            "user_id": ObjectId(user["_id"])
+        }
+        mongo.db.chempion.insert_one(new_chempion)
+        flash("Chempion Successfully Added")
+        return redirect(url_for("add_chempion"))
+
+    types = mongo.db.types.find().sort("type", 1)
+    return render_template("add_chempion.html", types=types)
+
+@app.route("/edit_chempion/<chempion_id>", methods=["GET", "POST"])
+def edit_chempion(chempion_id):
+    if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
+        edit_chempion = {
+            "img": request.form.get("chempion_img"),
+            "title": request.form.get("chempion_title"),
+            "text": request.form.get("chempion_text"),
+            "user_id": ObjectId(user["_id"])
+        }
+        mongo.db.chempion.update({"_id": ObjectId(chempion_id)}, edit_chempion)
+        flash("Chmepion Successfully Edited")
+    chempion = mongo.db.chempion.find_one({"_id": ObjectId(chempion_id)})
+    return render_template("edit_chempion.html", chempion=chempion)
+
+
+@app.route("/delete_chempion/<chempion_id>")
+def delete_chempion(chempion_id):
+    mongo.db.chempion.remove({"_id": ObjectId(chempion_id)})
+    flash("Chempion Deleted")
+    return redirect(url_for("search"))
 
 
 if __name__ == "__main__":
