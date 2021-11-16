@@ -11,7 +11,7 @@
         <form class="col s12" method="POST" action="{{ url_for('add_chempion') }}">
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-blender prefix"></i>
+                    <i class="fas fa-images"></i>
                     <input id="chempion_img" type="text" name="chempion_img" class="validate" placeholder="eg. 1 hr and 15 mins"
                         value="" required>
                     <label for="chempion_text">Chempion Image</label>
@@ -19,7 +19,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-bacon prefix"></i>
+                    <i class="fas fa-pen"></i>
                     <input id="chempion_title" type="text" name="chempion_title" class="validate" placeholder="eg. 1 hr and 15 mins"
                         value="" required>
                     <label for="cook_time">Chempion Title</label>
@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-blender prefix"></i>
+                    <i class="fas fa-trophy"></i>
                     <input id="chempion_text" type="text" name="chempion_text" class="validate" placeholder="eg. 1 hr and 15 mins"
                         value="" required>
                     <label for="chempion_text">Chempion Info</label>
@@ -35,8 +35,8 @@
             </div>
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="waves-effect waves-light btn button-style">Add Chempion</button>
-                    <a href="{{ url_for('search') }}" class="waves-effect waves-light btn button-style">Cancel</a>
+                    <button type="submit" class="waves-effect red lighten-4 btn button-style">Add Chempion</button>
+                    <a href="{{ url_for('search') }}" class="waves-effect red lighten-4 btn button-style">Cancel</a>
                 </div>
             </div>
         </form>

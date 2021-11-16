@@ -3,18 +3,18 @@
 <div class="container">
     <div class="title-style">
         <h4>
-            Edit Your Chempion
+            Edit Your Puppy
         </h4>
     </div>
 
     <div class="row form-bg-col">
-        <form class="col s12" method="POST" action="{{ url_for('edit_chempion', chempion_id=chempion._id) }}">
+        <form class="col s12" method="POST" action="{{ url_for('edit_bully', bully_id=bully._id) }}">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-images"></i>
-                    <input id="chempion_img" type="text" name="chempion_img" class="validate" placeholder="eg. 1 hr and 15 mins"
-                        value="{{ chempion.img }}" required>
-                    <label for="chempion_text">Chempion Image</label>
+                    <input id="bully_img" type="text" name="bully_img" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.img }}" required>
+                    <label for="bully_text">Puppy Image</label>
                 </div>
             </div>
             <div class="row">
@@ -35,8 +35,8 @@
             </div>
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="waves-effect waves-light btn button-style">Edit Chempion</button>
-                    <a href="{{ url_for('search') }}" class="waves-effect waves-light btn button-style">Cancel</a>
+                    <button type="submit" class="waves-effect red lighten-4 btn button-style">Edit Chempion</button>
+                    <a href="{{ url_for('search') }}" class="waves-effect red lighten-4 btn button-style">Cancel</a>
                 </div>
             </div>
         </form>

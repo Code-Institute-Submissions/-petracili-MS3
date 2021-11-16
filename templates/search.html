@@ -57,8 +57,8 @@
     <div class="s12">
         {% if session.user|lower == chempion.user_id|lower %}
         <a href="{{ url_for('edit_chempion', chempion_id=chempion._id) }}"
-            class="waves-effect waves-light btn-small button-style">Edit</a>
-        <a class="waves-effect waves-light btn-small modal-trigger button-style" href="#modal1">Delete</a>
+            class="waves-effect red lighten-4 btn-small button-style">Edit</a>
+        <a class="waves-effect red lighten-4 btn-small modal-trigger button-style" href="#modal1">Delete</a>
 
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
@@ -69,9 +69,9 @@
             </div>
             <div class="modal-footer">
                 <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}"
-                    class="modal-close waves-effect waves-light btn-small button-style">Delete</a>
+                    class="modal-close waves-effect red lighten-4 btn-small button-style">Delete</a>
                 <a href="{{ url_for('search') }}"
-                    class="modal-close waves-effect waves-light btn-small button-style">Cancel</a>
+                    class="modal-close waves-effect red lighten-4 btn-small button-style">Cancel</a>
             </div>
         </div>
         {% endif %}
