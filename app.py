@@ -158,7 +158,7 @@ def edit_chempion(chempion_id):
             "user_id": ObjectId(user["_id"])
         }
         mongo.db.chempion.update({"_id": ObjectId(chempion_id)}, edit_chempion)
-        flash("Chmepion Successfully Edited")
+        flash("Chempion Successfully Edited")
     chempion = mongo.db.chempion.find_one({"_id": ObjectId(chempion_id)})
     return render_template("edit_chempion.html", chempion=chempion)
 
@@ -167,6 +167,51 @@ def edit_chempion(chempion_id):
 def delete_chempion(chempion_id):
     mongo.db.chempion.remove({"_id": ObjectId(chempion_id)})
     flash("Chempion Deleted")
+    return redirect(url_for("search"))
+
+@app.route("/add_bully", methods=["GET", "POST"])
+def add_bully():
+    if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
+        new_bully = {
+            "img": request.form.get("bully_img"),
+            "dob": request.form.get("bully_dob"),
+            "first": request.form.get("bully_first"),
+            "gender": request.form.get("bully_gender"),
+            "hair_color": request.form.get("bully_hair_color"),
+            "nationality": request.form.get("bully_nationality"),
+            "user_id": ObjectId(user["_id"])
+        }
+        mongo.db.bully.insert_one(new_bully)
+        flash("Puppy Successfully Added")
+        return redirect(url_for("add_bully"))
+
+    types = mongo.db.types.find().sort("type", 1)
+    return render_template("add_puppy.html", types=types)
+
+@app.route("/edit_bully/<bully_id>", methods=["GET", "POST"])
+def edit_bully(bully_id):
+    if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
+        edit_bully = {
+            "img": request.form.get("bully_img"),
+            "dob": request.form.get("bully_dob"),
+            "first": request.form.get("bully_first"),
+            "gender": request.form.get("bully_gender"),
+            "hair_color": request.form.get("bully_hair_color"),
+            "nationality": request.form.get("bully_nationality"),
+            "user_id": ObjectId(user["_id"])
+        }
+        mongo.db.bully.update({"_id": ObjectId(bully_id)}, edit_bully)
+        flash("Puppy Successfully Edited")
+    bully = mongo.db.bully.find_one({"_id": ObjectId(bully_id)})
+    return render_template("edit_puppy.html", bully=bully)
+
+
+@app.route("/delete_bully/<bully_id>")
+def delete_bully(bully_id):
+    mongo.db.bully.remove({"_id": ObjectId(bully_id)})
+    flash("Puppy Deleted")
     return redirect(url_for("search"))
 
 
