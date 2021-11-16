@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}.
+<div class="container">
+    <div class="title-style">
+        <h4>
+            Edit Your Puppy
+        </h4>
+    </div>
+
+    <div class="row form-bg-col">
+        <form class="col s12" method="POST" action="{{ url_for('edit_bully', bully_id=bully._id) }}">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-images"></i>
+                    <input id="bully_img" type="text" name="bully_img" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.img }}" required>
+                    <label for="bully_text">Puppy Image</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pen"></i>
+                    <input id="bully_dob" type="text" name="bully_dob" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.dob }}" required>
+                    <label for="bully_dob">Puppy Dob</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-trophy"></i>
+                    <input id="bully_first" type="text" name="bully_first" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.first }}" required>
+                    <label for="bully_first">Puppy Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-venus-mars"></i>
+                    <input id="bully_gender" type="text" name="bully_gender" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.gender }}" required>
+                    <label for="bully_gender">Puppy Gender</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-palette"></i>
+                    <input id="bully_hair_color" type="text" name="bully_hair_color" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.hair_color }}" required>
+                    <label for="bully_hair_color">Puppy Hair Color</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-palette"></i>
+                    <input id="bully_nationality" type="text" name="bully_nationality" class="validate" placeholder="eg. 1 hr and 15 mins"
+                        value="{{ bully.nationality }}" required>
+                    <label for="bully_nationality">Puppy Nationality</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="waves-effect red lighten-4 btn button-style">Edit Chempion</button>
+                    <a href="{{ url_for('search') }}" class="waves-effect red lighten-4 btn button-style">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
