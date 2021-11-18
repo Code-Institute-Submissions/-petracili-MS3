@@ -29,15 +29,24 @@ def index():
 @app.route("/champion")
 def champion():
     chempion_list = list(mongo.db.chempion.find())
-    user = mongo.db.users.find_one({"username": session["user"]})
-    return render_template("champion.html", chempion_list=chempion_list, user=ObjectId(user["_id"])) 
+    try:
+        user = mongo.db.users.find_one({"username": session["user"]})
+        return render_template("champion.html", chempion_list=chempion_list, user=ObjectId(user["_id"]))
+    except:
+        user = {}
+        return render_template("champion.html", chempion_list=chempion_list, user=user) 
 
 @app.route("/puppy")
 def puppy():
     bully_list = list(mongo.db.bully.find())
-    user = mongo.db.users.find_one({"username": session["user"]})
-    print('Bully list is ', bully_list)
-    return render_template("puppy.html", bully_list=bully_list, user=ObjectId(user["_id"])) 
+    try:
+        user = mongo.db.users.find_one({"username": session["user"]})
+        return render_template("puppy.html", bully_list=bully_list, user=ObjectId(user["_id"])) 
+    except:
+        user = {}
+        return render_template("puppy.html", bully_list=bully_list, user=user)
+    
+     
 
 @app.route("/contact")
 def contact():
