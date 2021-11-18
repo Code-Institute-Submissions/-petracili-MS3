@@ -35,8 +35,9 @@ def champion():
 @app.route("/puppy")
 def puppy():
     bully_list = list(mongo.db.bully.find())
+    user = mongo.db.users.find_one({"username": session["user"]})
     print('Bully list is ', bully_list)
-    return render_template("puppy.html", bully_list=bully_list) 
+    return render_template("puppy.html", bully_list=bully_list, user=ObjectId(user["_id"])) 
 
 @app.route("/contact")
 def contact():
