@@ -229,3 +229,13 @@ p {
   height: 300px;
   overflow-y: scroll;
 }
+
+.search-icon-holder{
+  width: 35px !important;
+  margin-top: 25px;
+  margin-left:10px;
+}
+
+.hide{
+  display:none;
+}

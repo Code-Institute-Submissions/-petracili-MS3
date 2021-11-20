@@ -3,8 +3,21 @@
 <!--Champion Part-->
 <div class="container-fluid" id="classesypage">
   <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s1 search-icon-holder">
+          <i class="fas fa-search fa-2x"></i>
+        </div>
+        <div class="input-field col s4">
+          <input type="text" class="validate" name="search_text" id="search_text">
+          <label for="icon_prefix">Search</label>
+        </div>
+    </form>
+  </div>
+
+  <div class="row">
     {% for chempion in chempion_list %}
-      <div class="col s12 m6 l4">
+      <div class="col s12 m6 l4 search_item {{chempion.title.upper()}}">
         <div class="card">
           <div class="card-image">
             <img src="{{chempion.img}}" alt="{{chempion.title}}" class="champion"/>
@@ -25,4 +38,7 @@
     {% endfor %}
   </div>
 </div>
+ {% endblock %}
+ {% block extra_script %} 
+  <script src="./static/search.js"></script>
  {% endblock %}

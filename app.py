@@ -53,24 +53,6 @@ def contact():
     return render_template("contact.html") 
 
 
-@app.route("/search", methods=["GET", "POST"])
-def search():
-    if request.method == "POST":
-        query = request.form.get("query")
-        chempion = list(mongo.db.chempion.find({"$text": {"$search": query}}))
-        all_chempion = list(mongo.db.chempion.find())
-        print(chempion)
-        for chempion in chempion:
-            try:
-                recipe["user_id"] = mongo.db.users.find_one(
-                    {"_id": recipe["user_id"]})["username"]
-            except:
-                pass
-        return render_template("search.html", chempion=chempion)
-
-    return render_template("search.html")
-
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -129,8 +111,12 @@ def login():
 @app.route("/profile/<username>", methods=["GET"])
 def profile(username):
     if session["user"]:
+        user = mongo.db.users.find_one({"username": session["user"]})
+        chempion_list = list(mongo.db.chempion.find({'user_id': user['_id']}))
+        bully_list = list(mongo.db.bully.find({'user_id': user['_id']}))
         return render_template(
-            "profile.html", username=username)
+            "profile.html", username=username, chempion_list=chempion_list, bully_list=bully_list)
+        
     return redirect(url_for("login"))
 
 
