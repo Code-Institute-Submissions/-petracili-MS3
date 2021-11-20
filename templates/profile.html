@@ -29,25 +29,27 @@
       </div>
 </div>
 
-<div class="row">
-  {% for bully in bully_list %}
-    <div class="col s12 m6 l4 search_item {{bully.first.upper()}} {{bully.gender.upper()}} {{bully.nationality.upper()}}">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{bully.img}}" alt="{{bully.first}}" class="champion"/>
-        </div>
-        <div class="card-content champion-content">
-          <h5 class="card-title">{{bully.first}}</h5>
-          <p class="card-text services_text">{{bully.gender}} {{bully.hair_color}} {{bully.dob}} {{bully.last}} {{bully.nationality}}</p>
-        </div>
-        <div class="card-action">
-          <a class="waves-effect red lighten-4 btn" href="/contact">CONTACT US</a>
-            <a class="waves-effect red lighten-4 btn" href="{{ url_for('edit_bully', bully_id=bully._id) }}">EDIT</a>
-            <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_bully', bully_id=bully._id) }}">DELETE</a>
+<div class="container-fluid" id="classesypage">
+  <div class="row">
+    {% for bully in bully_list %}
+      <div class="col s12 m6 l4 search_item {{bully.first.upper()}} {{bully.gender.upper()}} {{bully.nationality.upper()}}">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{bully.img}}" alt="{{bully.first}}" class="champion"/>
+          </div>
+          <div class="card-content champion-content">
+            <h5 class="card-title">{{bully.first}}</h5>
+            <p class="card-text services_text">{{bully.gender}} {{bully.hair_color}} {{bully.dob}} {{bully.last}} {{bully.nationality}}</p>
+          </div>
+          <div class="card-action">
+            <a class="waves-effect red lighten-4 btn" href="/contact">CONTACT US</a>
+              <a class="waves-effect red lighten-4 btn" href="{{ url_for('edit_bully', bully_id=bully._id) }}">EDIT</a>
+              <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_bully', bully_id=bully._id) }}">DELETE</a>
+          </div>
         </div>
       </div>
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
+</div>x
 
 {% endblock %}
