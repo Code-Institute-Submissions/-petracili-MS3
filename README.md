@@ -247,7 +247,7 @@ Belowe you can see categories for puppy:
 ---
 ---
 # Testing
-Due to the size of the testing section, I have created a separate document for it. You can find it [here](******). 
+Due to the size of the testing section, I have created a separate document for it. You can find it [here](https://github.com/petracili/MS3/blob/master/TESTING.md). 
 
 ---
 ---

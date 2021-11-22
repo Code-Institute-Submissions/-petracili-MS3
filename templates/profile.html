@@ -49,7 +49,19 @@
         </div>
       </div>
     {% endfor %}
+     <!-- Delect chempion confirmation -->
+      <div class="modal green-neon-border" id="delete_chempion{{chempion_id}}">
+        <div class="modal-content">
+            <p>You are about to pemanantly delete this chempion</p>
+            <p>Once you have deleted it, you cannot get it back</p>
+            <p>Are you sure that you wish to delete?</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn modal-close ">Cancel</button>
+            <a href="{{ url_for('delete_chempion', chempion_id=chempion._id) }}" class="btn delete-btn">Delete</a>
+        </div>
+    </div>
   </div>
-</div>x
+</div>
 
 {% endblock %}
