@@ -4,18 +4,17 @@ Code Institute Diploma in Full-Stack Software Development Project 3
 
 ##### <u>Project name:</u>KingBull the Bulldog
 
-<img src="assets/readme/homepage.PNG" />
+<img src="assets/readme/firstpage.PNG" />
 
-### View the live project: https://aqueous-basin-06126.herokuapp.com/
+You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
 
 ## Contents
-1. [Summary](#summary)
-1. [UX](#ux)
-    1. [Strategy](#strategy)
-    1. [Scope](#scope)
-    1. [Structure](#structure)
-    1. [Skeleton](#skeleton)
-    1. [Surface](#surface)
++ [User Experience](#user-experience)
+  + [User Stories](#user-stories)
+  + [Design](#design)
+    + [Overall Feel](#overall-feel)
+    + [Colour Scheme](#colour-scheme)
+    + [Imagery](#imagery)
 1. [Features](#features)
     1. [Features left to implement](#left-to)
 1. [Testing](#testing)
@@ -24,35 +23,42 @@ Code Institute Diploma in Full-Stack Software Development Project 3
 1. [Credits](#credits)
 
 
-# <a name="summary"></a> Summary
-This is page is created to help new owners how bread need to look and what is best for them.
+# User Experience
+## User Stories
+### As a casual user: 
++ I want to be able to view dog without having to register and account. 
++ I want to be able to search for specific dog. 
++ I want to be able to search for dog that have a specific name,nationaliti and gender.
++ I want to have the option to register an account if I want to delete or edit your dog. 
+### As a returning user: 
++ I want to be able to log into my account.
++ I want to be able to upload a dog. 
++ I want to be able to add a dog.
++ I want to have ease of access to any dog that I have already uploaded.
++ I want to  be able to edit or delete any dog that I have already uploaded.
+### As the site owner/admin:
++ I want to be able to add new collections to the site.
++ I want the new collection to be added to the appropriate site areas.
++ I want to be able to delete any collections.
 
-It provides a database of pictures of different dogs which can be searched, viewed, added to, removed from and edited.
+## Design
+### Overall Feel
 
+For this project I wanted to have a light colors, the reason for choosing colors is that English bulldogs with their appearance look very scary but their personality is the opposite of appearance and are known if very gentle dogs regardless of their ugly past. 
 
-# <a name="ux"></a> UX
-## <a name="Strategy"></a> Strategy
-### **New site user's goals:**
-* As a new site user, I want to be able to browse and search for dog 
-* As a new site user, I want to be able to understand the intent of the page
-* As a new site user, I want I want to understand easily how to navigate the page and access the facilities provided
-### **Returning user's goals**
-* As a returning site user, I want to be able to log in
-* As a returning site user, I want to be able to view my dog
-* As a returning site user, I want to be able to edit and delete my dog
-* As a returning site user, I want to be able to add new dog
-### **Site owner'as goals:**
-* As a site owner, I want dogs added via the site to be stored in the correct format in the database
-* As a site owner, I want to be able to see who has added each dog
+### Colour Scheme
 
-## <a name="scope"></a> Scope
-**Functional requirements:**
-#### For ease of use:
-* Navigation bar which is simple and easy to navigate
-* A search Function
-#### To ensure the database is up to date and editable:
-* Function to add a dog
-* Function to delete a dog
+Because the overall theme is light pink, I wanted to go with Materialize color palet because we already use that library. I found the perfect colour scheme in a [Materialize: Documentation](https://materializecss.com/color.html).
+
+### Imagery
+
+Imagery is an important part of the user experience. Any user that uploads dog has to accompany it with an image. And when browsing the adolt dog and puppy, this image is the main selling point of the dog so it's the prominent feature of the dog card. 
+
+Another visual element is the banners on the dig and puppy pages. One some of them, a dog image was best. But for others, a visual element that evoked a feeling was more appropriate. If this site were going into full dog info, the site owner/admin would be in charge of this. 
+
+Lastly is the light color. It ties into the nice personality od that personality of a particular breed.
+
+In situation where pictures was to big kvalitet I was using [TinyPNG](https://tinypng.com/).
 
 
 **Content requirements:**
