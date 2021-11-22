@@ -15,9 +15,10 @@ You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
     + [Overall Feel](#overall-feel)
     + [Colour Scheme](#colour-scheme)
     + [Imagery](#imagery)
-1. [Features](#features)
-    1. [Features left to implement](#left-to)
-1. [Testing](#testing)
++ [Wireframes](#wireframes)
++ [Features](#features)
+  + [Current Features](#current-features)
+  + [Possible Future Features](#possible-future-features)1. [Testing](#testing)
 1. [Deployment](#deployment)
     1. [Github Pages](#github)
 1. [Credits](#credits)
@@ -60,30 +61,6 @@ Lastly is the light color. It ties into the nice personality od that personality
 
 In situation where pictures was to big kvalitet I was using [TinyPNG](https://tinypng.com/).
 
-
-**Content requirements:**
-#### To ensure the site is visually appealing and to draw the user's eye:
-* Images of adolt dog and puppy
-* Clear, crisp colours which do not detract from or make the text unreadable
-
-### For usability
-* For the time commitment to be clear as this is often a factor in a dog choice
-
-## <a name="structure"></a> Structure
-**Interaction design:**
-* User friendly interface to ensure usability and to encourage the user to return
-* Responsive and visible links which change on hover to provide user feedback as they navigate the site
-
-**Information Architecture:**
-* Navigation bar at the top of the page
-* Footer at the bottom of the page - sticky to the bottom so it is only visible when the bottom of the page is reached
-* Responsive navigation bar - adjusting for mobile for ease of use
-* Responsive images to ensure they fit within the designated spaces, no matter what device is being used or the size of the screen
-* All features appropriate size and responsive for mobile and desktop viewing
-* All information is appropriate and relative to the subject and not misleading or hard to find
-
------------------
-
 #### **Wireframing**
 
 ###### Home Page 
@@ -121,15 +98,40 @@ In situation where pictures was to big kvalitet I was using [TinyPNG](https://ti
 > Contact Page have form for send email.
 
 ---------------------------
+# Features
+## Current Features
+### **Navigation menu displayed across all pages**
 
-#### **Colors scheme and typography**
+The navigation menu will help the user move easily across all pages. For the chempion pages, there is a dropdown menu in which all of those pages are held. This stops the navigation from becoming too cluttered. 
 
- I have used the Noto Sans from Google Fonts. I have chosen the Noto Sans because it's handwriting calligraphy style for the title. Every other visible text is using Noto Sans.
+The navigation buttons update depending on whether a user is logged in, and whether that user is the admin:
 
- The site heavily relies on imagery so I wanted to find a balance between colors. I chose a light pink and white that is soothing and encourages creativity, which I think is a great choice for a page that focuses on a peopel's best friends.
-
+| Nav Link              |Not logged in  |Logged in as user|Logged in as admin
+|:-------------         |:------------- |:------------- |:------------- |
+|Logo(back to home)     |&#9989;        |&#9989;        |&#9989;
+|Champion               |&#9989;        |&#9989;        |&#9989;
+|Pupy                   |&#9989;        |&#9989;        |&#9989;
+|Manage Your Dog        |&#10060;       |&#9989;        |&#9989;
+|Account                |&#10060;       |&#9989;        |&#9989;
+|Log Out                |&#10060;       |&#9989;        |&#9989;
+|Register               |&#9989;        |&#10060;       |&#10060;
+|Log In                 |&#9989;        |&#10060;       |&#10060;
 
 -----------------
+
+### **All dogs accessible to users who don't want to make an account**
+
+As someone who doesn't particularly like to sign up to websites that I don't plan on adding to but like to view, I wanted to to contact breeders for buy puppy or breed his bulldog they are have first contact us nd then we will contanat them with breeders. I chose such content because of the better privacy of users and growers.  
+
+### **Users can search for dog and puppy based on either key words**
+
+Searching by name,nationality or gender is an important feature for any dog or puppy website so that was something that I wanted to include. But people who are familiar with that breed in general might be looking for a specific dog based on name so this was also included in the search criteria.
+
+### **Pagination on chempion or puppy pages**
+
+At the moment, the database is relatively small. But if this were site that was going into full production, the champion and puppy list would be much more extensive. As a result, the number of chempion or puppy displyed to the user could become overwhelming very quickly. I've not limited to number of chempion or puppy, reason of that is where people can contact different breeders and in that way they can learn more about the breed and also exchange experiences with other breeders of this breed of dogs.
+
+
 
 #### Languages Used
 
