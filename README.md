@@ -329,14 +329,38 @@ You will also need to install all of the packages listed in the requirements fil
 
 ---
 ---
+
+# Credits
+## Code
+
++ REGEX pattern for form input validation taken from this [Stack Overflow post](https://stackoverflow.com/questions/13766015/is-it-possible-to-configure-a-required-field-to-ignore-white-space).
+
++ The HTML back button was taken from this [W3Schools page](https://www.w3schools.com/jsref/met_his_back.asp).
+
++ I used [this Stack Overflow post](https://stackoverflow.com/questions/50394358/materializecss-vertically-offset-dropdown-menu-content/50395102) to adjust the placement of the nav bar dropdown.
+
++ This code for [materialize slider autoplay](https://stackoverflow.com/questions/36581504/materialize-carousel-slider-autoplay) was taken directly (also credited in in js file).
+
++ My own neon text css classes taken from [this article](https://css-tricks.com/how-to-create-neon-text-with-css/) and re-worked for my neon boxes (also credited in in css file).
+
++ [This demo](https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9) was used to understand how to incorperate flask pagination into my pre existing code.
+
++ [This Stack Overflow post](https://stackoverflow.com/questions/27992413/how-do-i-calculate-the-offsets-for-pagination/27992616) helped me gain more of an understanding of pagination offset.
+
++ [This Stack Overflow post](https://stackoverflow.com/questions/27980121/pylint-warning-possible-unbalanced-tuple-unpacking-with-sequence) helped with the Pylint warning that I was getting and provided the comment to override it.
+
++ I used the code in this [W3Schools post](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) to create the scroll-to-top button.
+
++ I took the JS code from this [Stack Overflow post](https://stackoverflow.com/questions/36581504/materialize-carousel-slider-autoplay) for the carousel autoplay functionality.
+
+### Test Dog
+
++ I searched for certain dogs with the help of a breeder I know privately, and in a conversation with him I checked the validity of the pedigree of a certain dog.
+
+
 #### Adding Email JS 
 
 Adding this functionality to a website was covered in the Interactive Frontend Development module of the course. Those few videos were a great help. Firstly you have to be registered to this service then you will be able to link it with an existing email address. The official EmailJS documentation is also crucial to understand what has to be done in order to get everything in working order. You can find the documentation [here](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/).
-
-### **Version Control**
-
-I used Git for version control and uploading the project to GitHub.
-My GitHub repository for this project is accessible [here](https://petracili.github.io/MS2/).
 
 # <a name="Testing"></a> Testing
 ### Testing write-up
@@ -351,31 +375,8 @@ CSS code validated on - https://jigsaw.w3.org/css-validator/
 
 A member of Code Institute Anna Greaves has mentioned this handy tool in her ["How to README.md"](https://www.youtube.com/watch?v=7BteidgLAyM&feature=youtu.be&ab_channel=CodeInstitute) online webinar.
 
-### Deployment
 
- 1. On GitHub, navigate to your site's repository.
- 2. Under your repository name, click **Settings**.
- 3. Under "GitHub Pages", use the **None** or **Branch** drop-down menu and select a publishing source.
- 4. Optionally, use the drop-down menu to select a folder for your publishing source.
- 5. Click **Save**.
 
-### Cloning this repository
-
-If you'd like to see and work on my code locally feel free to clone the repository. When you clone a repository, you copy the repository from GitHub to your local machine. 
-1. On GitHub, navigate to the main page of the repository.
-2. Above the list of files, click **Code**.
-3. To clone the repository using HTTPS, under "Clone with HTTPS", click . To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click **Use SSH**, then click . To clone a repository using GitHub CLI, click **Use GitHub CLI**, then click .
-4. Open Git Bash.
-5. Change the current working directory to the location where you want the cloned directory.
-6. Type `git clone`, and then paste the URL you copied earlier.
-
-   ```shell
-   $ git clone gh repo clone petracili/MS3
-   ```
-
-7. Press **Enter** to create your local clone.
-
-GitHub documentation on cloning repository includes other methods to using the console. You can read more [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 ### Credits
 
