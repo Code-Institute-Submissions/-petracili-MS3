@@ -4,7 +4,7 @@ Code Institute Diploma in Full-Stack Software Development Project 3
 
 ##### <u>Project name:</u>KingBull the Bulldog
 
-<img src="assets/readme/firstpage.PNG" />
+<img src="assets/readme/display.PNG" />
 
 You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
 
@@ -19,7 +19,9 @@ You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
 + [Features](#features)
   + [Current Features](#current-features)
   + [Possible Future Features](#possible-future-features)1. [Testing](#testing)
-1. [Deployment](#deployment)
++ [Database](#database)
++ [Technologies Used](#technologies-used)
+  + [Languages](#languages)
     1. [Github Pages](#github)
 1. [Credits](#credits)
 
@@ -121,7 +123,7 @@ The navigation buttons update depending on whether a user is logged in, and whet
 
 ### **All dogs accessible to users who don't want to make an account**
 
-As someone who doesn't particularly like to sign up to websites that I don't plan on adding to but like to view, I wanted to to contact breeders for buy puppy or breed his bulldog they are have first contact us nd then we will contanat them with breeders. I chose such content because of the better privacy of users and growers.  
+As someone who doesn't particularly like to sign up to websites that I don't plan on adding to but like to view, I wanted to to contact breeders for buy puppy or breed his bulldog they are have first contact us and then we will contanat them with breeders. I chose such content because of the better privacy of users and growers.  
 
 ### **Users can search for dog and puppy based on either key words**
 
@@ -131,33 +133,108 @@ Searching by name,nationality or gender is an important feature for any dog or p
 
 At the moment, the database is relatively small. But if this were site that was going into full production, the champion and puppy list would be much more extensive. As a result, the number of chempion or puppy displyed to the user could become overwhelming very quickly. I've not limited to number of chempion or puppy, reason of that is where people can contact different breeders and in that way they can learn more about the breed and also exchange experiences with other breeders of this breed of dogs.
 
+### **User account management**
+
+Anyone is able to make an account through the 'Register' page. They have to choose a username and a password. Measures have been put in place so that the user cannot choose a username that is already taken and they cannot use just whitespace.
+
+Once their account is made, they will be able to log in an out when needed. 
+
+### **User dog management**
+
+A registered user is able to upload chempion or puppy to the site. Once they have chempion or puppy that they have added, all chempion or puppy management can be done from their account page. This includes editing a deleting. I decided to keep these features exclusive to the account page rather than accessible on the chempion or puppy or collections pages. I like the uniformity of this. 
+
+  + **Uploading**: when uploading, there are form validations in place that the user needs to adhere to. The two most important are: 
+    + The user cannot leave any inputs blank
+    + The user cannot use just whitespace. 
+
+  + **Editing**: the user will have to go into the edit page through the chempion or puppy, make the necessary changes and confirm them at the bottom of the page. The user also has the option to cancel all changes. These steps assure that the user cannot do any of this by mistake. 
+
+  + **Deleting**: there is a confirmation modal in place to assure the user doesn't accidentally delete the chempion or puppy. 
+
+  ### **Chempion or puppy Images**
+
+When uploading a chempion or puppy, the user needs to add an image alongside the chempion or puppy information. This image will be used on both the chempion or puppy card and on the full chempion or puppy page. But because the image is added via a url, there are some people who wither don't was to go to the rounds of finding one, or they simply can't on their device. iOS doesn't allow the user to copy an image url in the same way most android do. Because of that I have added a placeholder image url that the user can use in place of their own. It's a stylish image that was found on [Unsplash](https://unsplash.com/) that looks good with the overall feel of the site. 
+
+### **Adding to chempion or puppy**
+
+When uploading a chempion or puppy, the user is required to add their chempion or puppy to at least one collection(chempion or puppy). This allows the user to feel like they're adding to the community in a more thoughtful way. This also takes the responsibility of curating the collections off the owner/admin. 
+
+### **Admin 'Collections' management**
+
+Only the admin can manage the collections pages. This includes adding, editing and deleting. The site has been designed so that the admin only has to use the collections management page to create a new collection at this will automatically be updated on the carousel. Any edits or deletions to collections will also apply to those elements. 
+
+## Possible Future Features
++ A rating system that allows users to rate each others chempion or puppy. 
+  + This could lead to sorting by top-rated chempion or puppy.
++ Ability to 'save' chempion or puppy to a users own account to refer back to.
++ Ability to upload a saved image to their chempion or puppy rather than relying on a URL.
++ Users ability to update username. 
++ Users ability to delete their account. 
+  + This could allow the user to either leave their chempion or puppy on the site or delete them along with the account 
++ Admin controlled 'featured' chempion or puppy
 
 
-#### Languages Used
+---
+---
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+# Database
+## Categories
+Belowe you can see categories for puppy:
+
+| Key                   |Value type     |Desc           |
+|:-------------         |:------------- |:------------- |
+|_id                    |ObjectId       |used in *puppy* array
+|img                    |string         |url for the carousel image
+|dob                    |string         |used for puppy date of birth
+|first                  |string         |used for name of puppy
+|gender                 |string         |used for gender 
+|hair_color             |string         |used for color 
+|last                   |string         |used for last name of puppy
+|nationality            |string         |used for nationality of puppy
 
 
-#### Frameworks, Libraries & Programs Used
+| Key                   |Value type     |Desc           |
+|:-------------         |:------------- |:------------- |
+|_id                    |ObjectId       |used in *chempion* array
+|img                    |string         |url for the carousel image
+|text                   |string         |used for name of chempion
+|titule                 |string         |used for titule of chempion
 
-- Google Maps Marker Clusterer
-- Git Version Control 
-- GitHub - to host the repository and the live site
-- [Bootstrap](https://getbootstrap.com/) 
-- [Email JS](https://www.emailjs.com/) - for making the contact form alive
-- [FontAwesome](https://fontawesome.com/) - for the icons used
-- [W3Schools Online Web Tutorials](https://www.w3schools.com) - for easier handling of codes
-- [Animate.css](https://animate.style/) - for animating element on the landing page 
-- [Google Fonts:](https://fonts.google.com/) - for font on webpage
-- [HTML Color Codes:](https://htmlcolorcodes.com/) - for color codes and names
-- Code Institute - for reminder of how the element is used
-- [Grammarly](https://www.grammarly.com) - to correct grammar
-- [MongoDB](https://en.wikipedia.org/wiki/MongoDB) - te create database and conect with gitpod
-- [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
-- [Materialize](https://materializecss.com/about.html)
+
+
+# Technologies Used
+## Languages
++ [HTML5](https://en.wikipedia.org/wiki/HTML5)
++ [CSS3](https://en.wikipedia.org/wiki/CSS)
++ [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
++ [Python3](https://www.python.org/)
+
+## Frameworks and Libraries
++ [Flask](https://flask.palletsprojects.com/en/1.1.x/)
++ [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
++ [Pip3](https://pip.pypa.io/en/stable/)
++ [dnspython](https://www.dnspython.org/)
++ [jQuery](https://jquery.com/)
++ [Flask Paginate](https://pythonhosted.org/Flask-paginate/)
++ [Jinja](https://jinja.palletsprojects.com/en/3.0.x/)
++ [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
++ [Materialize](https://materializecss.com/).
++ [FontAwesome](https://fontawesome.com/)
++ [Google Fonts](https://fonts.google.com/) 
+
+## All Others
++ [Heroku](https://www.heroku.com/) used to deploy live site
++ [MongoDB](https://www.mongodb.com/) used to host database information.
++ [GitHub](https://github.com/) used to host repository.
++ [GitPod](https://www.gitpod.io/) used to develop project and organise version 
++ [Balsamiq](https://balsamiq.com/) used to create wireframes.
++ [CloudConvert](https://cloudconvert.com/) to convert all images to .webp format.
++ [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
++ [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.
++ [Am I Responsive](http://ami.responsivedesign.is/) used to generate README intro image.
++ [Autoprefixer](https://autoprefixer.github.io/) used to make CSS cross-browser compatible.
++ [favicon.io](https://favicon.io/) used to create a site favicon.
++ [TinyPNG](https://tinypng.com/) used to host images.
 
 
 #### Adding Email JS 
