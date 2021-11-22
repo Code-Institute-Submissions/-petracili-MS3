@@ -23,7 +23,15 @@ You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
 + [Technologies Used](#technologies-used)
   + [Languages](#languages)
     1. [Github Pages](#github)
-1. [Credits](#credits)
++ [Testing](#testing)
++ [Deployment](#deployment)
+  + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
+  + [Forking the Repository](#forking-the-repository)
+  + [Cloning Project](#cloning-project)
++ [Credits](#credits)
+  + [Content](#content)
+  + [Media](#media)
+  + [Acknowledgements](#acknowledgements)
 
 
 # User Experience
@@ -236,7 +244,91 @@ Belowe you can see categories for puppy:
 + [favicon.io](https://favicon.io/) used to create a site favicon.
 + [TinyPNG](https://tinypng.com/) used to host images.
 
+---
+---
+# Testing
+Due to the size of the testing section, I have created a separate document for it. You can find it [here](******). 
 
+---
+---
+# Deployment
+
+## Heroku Deployment
+This project was deployed through Heroku using the following steps:
+
+### Requirements and Procfile
+Heroku needs to know which technologies are being used and any requirements, so I created files to let it know. Before creating the Heroku app, create these files using the following steps in GitPod: 
++ In the GitPod terminal, type ```pip3 freeze --local > requirements.txt``` to create your requirements file.
++ In the GitPod terminal, type ```echo web: python run.py > Procfile``` to create your Procfile.
++ The Procfile needs to contain the following line: ```web: python app.py``` and make sure there is no additional blank line after it. 
++ Push these files to your repository.
+
+### Environmentals File
+
+Create and env.py file using the following information:
+
+```
+import os
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", " *unique secret key* ")
+os.environ.setdefault("MONGO_URI", " *unique uri from mongo.db * ")
+os.environ.setdefault("MONGO_DB", " *database name* ")
+```
+
+Because this contains sensitive information, this needs to be added to the '.gitignore' file. 
+
+### Creating Heroku App
++ Log into Heroku
++ Select 'Create New App' from your dashboard
++ Choose an app name (if there has been an app made with that name, you will be informed and will need to choose an alternative)
++ Select the appropriate region based on your location
++ Click 'Create App'
+### Connecting to GitHub
++ From the dashboard, click the 'Deploy' tab towards the top of the screen
++ From here, locate 'Deployment Method' and choose 'GitHub'
++ From the search bar newly appeared, locate your repository by name
++ When you have located the correct repository, click 'Connect'
++ DO NOT CLICK 'ENABLE AUTOMATIC DEPLOYMENT': This can cause unexpected errors before configuration. We'll come back to this
++ Click the 'Settings' tab towards the top of the page
++ Locate the 'Config Vars' and click 'Reveal Config Vars'
++ Use the following keys and values which must match the key/value pairs in your env.py file:
+
+| Key           | Value               |
+| ------------- |:--------------------|
+| IP            | 0.0.0.0             |
+| PORT          | 5000                |
+| SECRET_KEY    |*Secure secret key*  |
+| MONGO_URI     |mongodb+srv://root:*PASSWORD*@myfirstcluster.dr4g1.mongodb.net/myFirstDB?retryWrites=true&w=majority |
+| MONGO_DBNAME  |myFirstDB            |
+|               |                     |
+
++ Go back to the 'Deploy' tab and you can now click 'Enable Automatic Deployment'
++ Underneath, locate 'Manual Deploy'; choose the master branch and click 'Deploy Branch'
++ Once the app is built (it may take a few minutes), click 'Open App' from the top of the page
+
+## Forking the Repository
++ Log in to GitHub and locate the GitHub Repository
++ At the top of the Repository above the "Settings" Button on the menu, locate the "Fork" Button.
++ You will have a copy of the original repository in your GitHub account.
++ You will now be able to make changes to the new version and keep the original safe. 
+## Making a Local Clone
++ Log into GitHub.
++ Locate the repository.
++ Click the 'Code' dropdown above the file list.
++ Copy the URL for the repository.
++ Open Git Bash on your device.
++ Change the current working directory to the location where you want the cloned directory.
++ Type ```git clone``` in the CLI and then paste the URL you copied earlier. This is what it should look like:
+  + ```$ git clone https://github.com/petracili/MS3```
++ Press Enter to create your local clone.
+
+**NB:** In order to work with a clone of this project, you will need to create the env.py file using your own variables and create a MongoDB database matching the one documented in the [Database section](#database) of this doc. 
+
+You will also need to install all of the packages listed in the requirements file you can use the following command in the terminal ```pip install -r requirements.txt``` which will do it for you. 
+
+---
+---
 #### Adding Email JS 
 
 Adding this functionality to a website was covered in the Interactive Frontend Development module of the course. Those few videos were a great help. Firstly you have to be registered to this service then you will be able to link it with an existing email address. The official EmailJS documentation is also crucial to understand what has to be done in order to get everything in working order. You can find the documentation [here](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/).
