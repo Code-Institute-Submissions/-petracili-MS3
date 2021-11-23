@@ -143,7 +143,7 @@ def add_chempion():
     types = mongo.db.types.find().sort("type", 1)
     return render_template("add_chempion.html", types=types)
 
-@app.route("/edit_chempion/<chempion_id>", methods=["GET", "POST"])
+@app.route("/edit_champion/<chempion_id>", methods=["GET", "POST"])
 def edit_chempion(chempion_id):
     if request.method == "POST":
         user = mongo.db.users.find_one({"username": session["user"]})
@@ -163,7 +163,7 @@ def edit_chempion(chempion_id):
 def delete_chempion(chempion_id):
     mongo.db.chempion.remove({"_id": ObjectId(chempion_id)})
     flash("Chempion Deleted")
-    return redirect(url_for("search"))
+    return redirect(url_for("champion"))
 
 @app.route("/add_bully", methods=["GET", "POST"])
 def add_bully():
@@ -208,7 +208,7 @@ def edit_bully(bully_id):
 def delete_bully(bully_id):
     mongo.db.bully.remove({"_id": ObjectId(bully_id)})
     flash("Puppy Deleted")
-    return redirect(url_for("search"))
+    return redirect(url_for("puppy"))
 
 
 if __name__ == "__main__":
