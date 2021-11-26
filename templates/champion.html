@@ -31,9 +31,19 @@
             <a class="waves-effect red lighten-4 btn" href="/contact">CONTACT US</a>
             {%if chempion.user_id == user%}
               <a class="waves-effect red lighten-4 btn" href="{{ url_for('edit_chempion', chempion_id=chempion._id) }}">EDIT</a>
-              <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_chempion', chempion_id=chempion._id) }}">DELETE</a>
+              <a class="waves-effect red lighten-4 btn modal-trigger" href="#modal_{{chempion._id}}">DELETE</a>
             {%endif%}
           </div>
+        </div>
+      </div>
+      <!-- Modal Structure -->
+      <div id="modal_{{chempion._id}}" class="modal">
+        <div class="modal-content">
+          <h4>Are you sure you want to delete the champion "{{chempion.title}}"?</h4>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">CANCEL</a>
+          <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_chempion', chempion_id=chempion._id) }}">DELETE</a>
         </div>
       </div>
     {% endfor %}
