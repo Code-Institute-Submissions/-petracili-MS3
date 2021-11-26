@@ -21,7 +21,7 @@
               <div class="card-action">
                 <a class="waves-effect red lighten-4 btn" href="/contact">CONTACT US</a>
                   <a class="waves-effect red lighten-4 btn" href="{{ url_for('edit_chempion', chempion_id=chempion._id) }}">EDIT</a>
-                  <a class="waves-effect waves-light btn modal-trigger" href="#modal_{{chempion._id}}">DELETE</a>
+                  <a class="waves-effect red lighten-4 btn modal-trigger" href="#modal_{{chempion._id}}">DELETE</a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@
           <div class="card-action">
             <a class="waves-effect red lighten-4 btn" href="/contact">CONTACT US</a>
               <a class="waves-effect red lighten-4 btn" href="{{ url_for('edit_bully', bully_id=bully._id) }}">EDIT</a>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal_{{bully._id}}">DELETE</a>
+              <a class="waves-effect red lighten-4 btn modal-trigger" href="#modal_{{bully._id}}">DELETE</a>
             </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
           <h4>Are you sure you want to delete the puppy "{{bully.first}}"?</h4>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">CANCEL</a>
+          <a href="#!" class="modal-close waves-effect red lighten-4 btn-flat">CANCEL</a>
           <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_bully', bully_id=bully._id) }}">DELETE</a>
         </div>
       </div>

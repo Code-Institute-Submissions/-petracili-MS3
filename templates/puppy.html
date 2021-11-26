@@ -32,9 +32,19 @@
             <a class="waves-effect red lighten-4 btn" href="/contact">CONTACT US</a>
             {%if bully.user_id == user%}
               <a class="waves-effect red lighten-4 btn" href="{{ url_for('edit_bully', bully_id=bully._id) }}">EDIT</a>
-              <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_bully', bully_id=bully._id) }}">DELETE</a>
+              <a class="waves-effect red lighten-4 btn modal-trigger" href="#modal_{{puppy_id}}">DELETE</a>
             {%endif%}
           </div>
+        </div>
+      </div>
+      <!-- Modal Structure -->
+      <div id="modal_{{bully._id}}" class="modal">
+        <div class="modal-content">
+          <h4>Are you sure you want to delete the puppy "{{bully.first}}"?</h4>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect red lighten-4 btn-flat">CANCEL</a>
+          <a class="waves-effect red lighten-4 btn" href="{{ url_for('delete_bully', bully_id=bully._id) }}">DELETE</a>
         </div>
       </div>
 
