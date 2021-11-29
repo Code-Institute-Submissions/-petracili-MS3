@@ -3,7 +3,7 @@
 <div class="container">
     <div class="title-style">
         <h4>
-            Edit Your Chempion
+            Edit Your Champion
         </h4>
     </div>
 
@@ -14,7 +14,7 @@
                     <i class="fas fa-images"></i>
                     <input id="chempion_img" type="text" name="chempion_img" class="validate" placeholder="eg. 1 hr and 15 mins"
                         value="{{ chempion.img }}" required>
-                    <label for="chempion_text">Chempion Image</label>
+                    <label for="chempion_text">Champion Image</label>
                 </div>
             </div>
             <div class="row">
@@ -22,7 +22,7 @@
                     <i class="fas fa-pen"></i>
                     <input id="chempion_title" type="text" name="chempion_title" class="validate" placeholder="eg. 1 hr and 15 mins"
                         value="{{ chempion.title }}" required>
-                    <label for="cook_time">Chempion Title</label>
+                    <label for="cook_time">Champion Title</label>
                 </div>
             </div>
             <div class="row">
@@ -30,12 +30,12 @@
                     <i class="fas fa-trophy"></i>
                     <input id="chempion_text" type="text" name="chempion_text" class="validate" placeholder="eg. 1 hr and 15 mins"
                         value="{{ chempion.text }}" required>
-                    <label for="chempion_text">Chempion Info</label>
+                    <label for="chempion_text">Champion Info</label>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="waves-effect red lighten-4 btn button-style">Edit Chempion</button>
+                    <button type="submit" class="waves-effect red lighten-4 btn button-style">Edit Champion</button>
                     <a href="{{ url_for('champion') }}" class="waves-effect red lighten-4 btn button-style">Cancel</a>
                 </div>
             </div>
