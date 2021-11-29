@@ -31,29 +31,26 @@ def champion():
     chempion_list = list(mongo.db.chempion.find())
     try:
         user = mongo.db.users.find_one({"username": session["user"]})
-        return render_template("champion.html", chempion_list=chempion_list, 
-                               user=ObjectId(user["_id"]))
+        return render_template("champion.html", chempion_list=chempion_list, user=ObjectId(user["_id"]))
     except:
         user = {}
-        return render_template("champion.html", chempion_list=chempion_list, 
-                               user=user)
-
+        return render_template("champion.html", chempion_list=chempion_list, user=user) 
 
 @app.route("/puppy")
 def puppy():
     bully_list = list(mongo.db.bully.find())
     try:
         user = mongo.db.users.find_one({"username": session["user"]})
-        return render_template("puppy.html", bully_list=bully_list, 
-                               user=ObjectId(user["_id"]))
+        return render_template("puppy.html", bully_list=bully_list, user=ObjectId(user["_id"])) 
     except:
         user = {}
         return render_template("puppy.html", bully_list=bully_list, user=user)
-
+    
+     
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html") 
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -118,9 +115,8 @@ def profile(username):
         chempion_list = list(mongo.db.chempion.find({'user_id': user['_id']}))
         bully_list = list(mongo.db.bully.find({'user_id': user['_id']}))
         return render_template(
-            "profile.html", username=username, chempion_list=chempion_list, 
-            bully_list=bully_list)
-
+            "profile.html", username=username, chempion_list=chempion_list, bully_list=bully_list)
+        
     return redirect(url_for("login"))
 
 
@@ -129,7 +125,6 @@ def logout():
     flash("You've been logged out")
     session.pop("user")
     return redirect(url_for("login"))
-
 
 @app.route("/add_chempion", methods=["GET", "POST"])
 def add_chempion():
@@ -147,7 +142,6 @@ def add_chempion():
 
     types = mongo.db.types.find().sort("type", 1)
     return render_template("add_chempion.html", types=types)
-
 
 @app.route("/edit_champion/<chempion_id>", methods=["GET", "POST"])
 def edit_chempion(chempion_id):
@@ -171,7 +165,6 @@ def delete_chempion(chempion_id):
     flash("Chempion Deleted")
     return redirect(url_for("champion"))
 
-
 @app.route("/add_bully", methods=["GET", "POST"])
 def add_bully():
     if request.method == "POST":
@@ -191,7 +184,6 @@ def add_bully():
 
     types = mongo.db.types.find().sort("type", 1)
     return render_template("add_puppy.html", types=types)
-
 
 @app.route("/edit_bully/<bully_id>", methods=["GET", "POST"])
 def edit_bully(bully_id):
