@@ -51,7 +51,7 @@ I manually checked all of the browsers specified.
 
 For registration, you are not able to create an account if you don't fill the file correctly which means that you have to fill in your first name, last name and as well correct email address. When you registered correctly, the administrator can see your user name and ID on MongoDB.
 
-[Registration](static/readme/test/registertest.PNG)
+[Registration](test/registertest.PNG)
 
 [Registration](static/readme/test/registertest2.PNG)
 
