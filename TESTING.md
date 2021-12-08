@@ -64,31 +64,31 @@ For registration, you are not able to create an account if you don't fill the fi
 
 ### **LogIn and LogOut**
 
-[LogIN](static/readme/test/login.PNG)
-
-[LogIN](static/readme/test/logouttest.PNG)
+<img src="static/readme/test/login.PNG" />
 
 As we can see you are not able to log in if you don't put the correct username and correct password.
 
-[LogOut](static/readme/test/logouttest.PNG)
+<img src="static/readme/test/logouttest.PNG" />
 
-### **Chempion Test **
+As we can see you are not able to log in if you don't put the correct username and correct password.
+
+### **Chempion Test**
 
 On the add champion page, you can add your adult dog you have a form in which you add a picture, the title of the dog and his description. When you add your dog you will receive a notification that your dog has been successfully added as well as title pictures and a description are required.
 
-[ADD Chempion](static/readme/test/chempionaddtest.PNG)
+<img src="static/readme/test/chempionaddtest.PNG" />
 
 There is also the option to edit your champion, in this option you have the option to change the image, title and description of the dog. Also, only the account holder has the option to edit the dog.
 
-[EDIT Chempion](static/readme/test/editch.PNG)
+<img src="static/readme/test/editch.PNG" />
 
 Also, the account holder is able to delete the dog, but before deleting it, he will receive a notification if he is sure that he wants to delete the dog.
 
-[DELETE Chempion](static/readme/test/chedelete2.PNG)
+<img src="static/readme/test/chedelete2.PNG" />
 
-[DELETE Chempion](static/readme/test/chedelete.PNG)
+<img src="static/readme/test/chedelete.PNG" />
 
-### **Puppy Test **
+### **Puppy Test**
 
 
 

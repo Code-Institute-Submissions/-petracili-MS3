@@ -6,7 +6,7 @@ Code Institute Diploma in Full-Stack Software Development Project 3
 
 <img src="assets/readme/display.PNG" />
 
-You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
+You can find the live site [here](http://aqueous-basin-06126.herokuapp.com/)
 
 ## Contents
 + [User Experience](#user-experience)
@@ -29,8 +29,6 @@ You can find the live site [here](https://aqueous-basin-06126.herokuapp.com/)
   + [Forking the Repository](#forking-the-repository)
   + [Cloning Project](#cloning-project)
 + [Credits](#credits)
-  + [Content](#content)
-  + [Media](#media)
   + [Acknowledgements](#acknowledgements)
 
 
