@@ -169,7 +169,6 @@ Page contact us servers so that the user can contact the administrator who will 
 |                       |     |(Only visible if user in session)  |Pass|
 |Manage Collections Link|Click|Redirect to manage collections page|Pass|
 |                       |     |(Only visible if admin in session) |Pass|
-
 | **SideNav**           |       |    |
 |Hamburger Icon         |Click|Open Sidenav             |Pass|
 |Home Link           |Click|Redirect to all home  |Pass|
@@ -188,7 +187,6 @@ Page contact us servers so that the user can contact the administrator who will 
 |                       |     |(Only visible if user in session)  |Pass|
 |Manage Collections Link|Click|Redirect to manage collections page|Pass|
 |                       |     |(Only visible if admin in session) |Pass|
-
 | **Footer**            |     |     |
 |Facebook Link          |Click|Open on external page    |Pass|
 |Instagram Link         |Click|Open on external page    |Pass|
@@ -209,12 +207,12 @@ Page contact us servers so that the user can contact the administrator who will 
 |Log In Link            |Click              |Redirect to log in page    |Pass|
 |Edit Chempion Link          |Click              |Redirect to Edit Chempion page  |Pass|
 |Edit Puppy Link          |Click              |Redirect to Edit Puppy page  |Pass|
-
 | **Inline Links**      |                   |                           |    |
 |Sign Up link           |Click              |Redirect to Register Page  |Pass|
 |Sign In link           |Click              |Redirect to Login page     |Pass|
-recipe
+
 ---
+
 ### add_chempion/puppy.html
 
 | Element                   | Action            | Expected Result                   | Pass/Fail  |
