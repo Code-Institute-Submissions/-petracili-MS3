@@ -106,6 +106,47 @@ On the puppy page, we also have the option to add our puppies, with a few more o
 <img src="test/puppydelet2.PNG" />
 
 
+### **Profile**
+
+As we add champions or puppies, they will automatically appear on your profile, and you can also delete or edit them there.
+
+<img src="test/profiletest.PNG" />
+
+### **Search**
+
+We are able to search champions or puppies by criteria (by name, nationality and gender).
+
+<img src="test/srctest.PNG" />
+
+### **Delete**
+
+It is also possible to delete puppies or champions and when we press the delete button we get a notification if we are sure we want to delete the dog.
+
+<img src="test/deletetest.PNG" />
+
+<img src="test/delete2.PNG" />
+
+<img src="test/chedelete.PNG" />
+
+<img src="test/puppydelet.PNG" />
+
+<img src="test/puppydelet2.PNG" />
+
+### **Contact Us**
+
+Page contact us servers so that the user can contact the administrator who will later connect him with the breeder, the idea is to maintain the privacy and security of breeders. While filling out the email form, enter first name last name and email is required as well, email is specified to be marked @
+
+<img src="test/contest.PNG" />
+
+<img src="test/testcon.PNG" />
+
+<img src="test/conttest.PNG" />
+
+<img src="test/contat3.PNG" />
+
+
+
+
 
 
 
