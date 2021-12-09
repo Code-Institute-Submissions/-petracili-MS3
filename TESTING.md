@@ -15,6 +15,9 @@
 
  All pages passed all checks. 
 
+ <img src="assets/readme/htmlval.PNG" />
+
+
 
 ### **CSS**
 
@@ -23,9 +26,8 @@ I checked the CSS file using [W3C CSS Markup Validation Service](https://jigsaw.
 
 All pages passed all checks. 
 
-<img src="static/readme/csstest2.PNG" />
+<img src="assets/readme/csstest2.PNG" />
 
-![css validator results](static/readme/csstest2.PNG)
 
 ### **JavaScript**
 
@@ -34,16 +36,16 @@ I checked the script.js file using [JSHint](https://jshint.com/).
 Same as on HTML Validation I have to chenck each js file. 
 
 Only what coming is a few waring but I dont have error. 
-<img src="static/readme/JStest2.png" />
 
-![JS validator results](static/readme/JStest2.png)
+<img src="assets/readme/JStest2.png" />
+
 
 ### **Python**
 I checked the app.py file using [PEP8 online](http://pep8online.com/)
 
 The code passed all checks.
 
-<img src="static/readme/pytest.PNG" />
+<img src="assets/readme/pytest.PNG" />
 
 
 ---
@@ -144,8 +146,220 @@ Page contact us servers so that the user can contact the administrator who will 
 
 <img src="test/contat3.PNG" />
 
+## Manually Testing Functionality
+### **base.html**
+
+| Element               | Action        | Expected Result| Pass/Fail  |
+|:-------------         |:------------- |:-----|:-----|
+| **NavBar**            |               |      |
+|Logo                   |Click|Redirect to home         |Pass|
+|Home Link           |Click|Redirect to all home  |Pass|
+|Collections Dropdown   |Click|Open collections dropdown|Pass|
+|Collection page link   |Click|Redirect to collection page|Pass|
+|Manage Collections link|Click|Redirect to all_collections page|Pass|
+|                       |     |(Only visible if admin in session)|Pass|
+|Register Link          |Click|Redirect to register page|Pass|
+|                       |     |(Not visible if user in session)  |Pass|
+|Log In Link            |Click|Redirect to log in page  |Pass|
+|                       |     |(Not visible if user in session)  |Pass|
+|Log Out Link           |Click|Log user out of account  |Pass|
+|                       |Click|Redirect to log in page  |Pass|
+|                       |     |(Only visible if user in session)  |Pass|
+|Account Link            |Click|Redirect to account page|Pass|
+|                       |     |(Only visible if user in session)  |Pass|
+|Manage Collections Link|Click|Redirect to manage collections page|Pass|
+|                       |     |(Only visible if admin in session) |Pass|
+
+| **SideNav**           |       |    |
+|Hamburger Icon         |Click|Open Sidenav             |Pass|
+|Home Link           |Click|Redirect to all home  |Pass|
+|Collections Dropdown   |Click|Open collections dropdown|Pass|
+|Collection page link   |Click|Redirect to collection page|Pass|
+|Manage Collections link|Click|Redirect to all_collections page|Pass|
+|                       |     |(Only visible if admin in session)|Pass|
+|Register Link          |Click|Redirect to register page|Pass|
+|                       |     |(Not visible if user in session)  |Pass|
+|Log In Link            |Click|Redirect to log in page  |Pass|
+|                       |     |(Not visible if user in session)  |Pass|
+|Log Out Link           |Click|Log user out of account  |Pass|
+|                       |Click|Redirect to log in page  |Pass|
+|                       |     |(Only visible if user in session)  |Pass|
+|Account Link            |Click|Redirect to account page|Pass|
+|                       |     |(Only visible if user in session)  |Pass|
+|Manage Collections Link|Click|Redirect to manage collections page|Pass|
+|                       |     |(Only visible if admin in session) |Pass|
+
+| **Footer**            |     |     |
+|Facebook Link          |Click|Open on external page    |Pass|
+|Instagram Link         |Click|Open on external page    |Pass|
+|Twtter Link            |Click|Open on external page    |Pass|
+
+---
+### **index.html**
+| Element               | Action            | Expected Result           | Pass/Fail  |
+|:-------------         |:-------------     |:-----                     |:-----|
+| **Carousel**          |                   |                           |    |
+|Home Link          |Click              |Redirect to Home page  |Pass|
+|Chempion Link          |Click              |Redirect to Chempion page  |Pass|
+|Puppy Link            |Click              |Redirect to Puppy page    |Pass|
+|Add Chempion Link        |Click              |Redirect to Add Chempion page|Pass|
+|Add Puppy Link         |Click              |Redirect to Add Puppy page |Pass|
+|Profile Link          |Click              |Redirect to Profile page  |Pass|
+|Register Link          |Click              |Redirect to register page  |Pass|
+|Log In Link            |Click              |Redirect to log in page    |Pass|
+|Edit Chempion Link          |Click              |Redirect to Edit Chempion page  |Pass|
+|Edit Puppy Link          |Click              |Redirect to Edit Puppy page  |Pass|
+
+| **Inline Links**      |                   |                           |    |
+|Sign Up link           |Click              |Redirect to Register Page  |Pass|
+|Sign In link           |Click              |Redirect to Login page     |Pass|
+recipe
+---
+### add_chempion/puppy.html
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+| **Form**                  |                   |                                   |    |
+|Choose Collection dropdown |Click              |Reveal collection options          |Pass|
+|Text input fields          |Type into          |Text appears, line highlights white|Pass|
+|Text input fields          |Leave blank        |Line highlights white                |Pass|
+|Text input fields          |Just input whitespace  |Line highlights white            |Pass|
+|Tooltips                   |Hover/click        |Reveal notes/instructions          |Pass|
+|Add ingredient btn         |Click              |Generate new input field           |Pass|
+|Delete ingredient btn      |Click              |Delete new input field             |Pass|
+|Add method step btn        |Click              |Generate new method step field     |Pass|
+|Delete method step btn     |Click              |Delete new method step field       |Pass|
+|Add recichempion/puppype btn(all fields correct)|Click       |Dog uploads to database         |Pass|
+|                           |                   |Redirect to account page           |Pass|
+|Add chempion/puppy btn(some incorrect fields)|Click    |Page scrolls to incorrect fields   |Pass|
+
+---
+### **edit_chempion/puppy.html**
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+| **Form**                  |                   |                                   |    |
+|All fields                 |On page open       |Pre-populated with previous inputs |Pass|
+|Choose Collection dropdown |Click              |Reveal collection options          |Pass|
+|Text input fields          |Type into          |Text appears, line highlights green|Pass|
+|Text input fields          |Leave blank        |Line highlights red                |Pass|
+|Text input fields          |Just input whitespace  |Line highlights red            |Pass|
+|Tooltips                   |Hover/click        |Reveal notes/instructions          |Pass|
+|Add chempion/puppy btn         |Click              |Generate new input field           |Pass|
+|Delete chempion/puppy btn      |Click              |Delete new input field             |Pass|
+|Add method step btn        |Click              |Generate new method step field     |Pass|
+|Delete method step btn     |Click              |Delete new method step field       |Pass|
+|Update btn(all fields correct)|Click           |chempion/puppy updates on database         |Pass|
+|                           |                   |Redirect to account page           |Pass|
+|                           |                   |"chempion/puppy Edited!" confirmation message  |Pass|
+|Update btn(some incorrect fields)|Click        |Page scrolls to incorrect fields   |Pass|
+|Cancel btn                 |Click              |No changes made to chempion/puppy          |Pass|
+|                           |                   |Redirect to account page           |Pass|
+
+---
+### **login.html**
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+|**Form**                   |Click              |Redirect to previous page          |Pass|
+|Username                   |Text input         |Text displayed to user             |Pass|
+|Password                   |Text input         |Password hidden to user            |Pass|
+|Submit btn (fields correct)|Click              |Redirect to account page           |Pass|
+|Submit btn (fields incorrect)|Click            |Reload log in page                 |Pass|
+|**Redirect Link**          |                   |                                   |    |
+|'Register here' link       |Click              |Redirect to registration page      |Pass|
+
+---
+### **register.html**
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+|**Form**                   |Click              |Redirect to previous page          |Pass|
+|Username                   |Text input         |Text displayed to user             |Pass|
+|Password                   |Text input         |Password hidden to user            |Pass|
+|**Submit btn**             |                   |                                   |    |
+|Fields correct             |Click              |New user added to database         |Pass|
+|                           |                   |Redirect to account page           |Pass|
+|Fields incorrect format    |Click              |Fields highlighted red, user prompted to change format |Pass|
+|Username already in use    |Click              |Reload register page, error message to user    |Pass|
+|**Redirect Link**          ||||
+|'Log in here' link         |Click              |Redirect to log in page            |Pass|
+
+---
+### **Chempion/Puppy pages**
+*All collections pages have identical functionality so all the below test apply to each collection page:*
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+|Puppy Card                |On page load       |Only display Puppy in that category|Pass|
+|Chempion Card                |Hover/click        |Reveal chempion action buttons       |Pass|
+|**If nothing in collection**|                  |                                   |    |
+|User message               |On page load       |Message informs user that there's no recipes in collection|Pass|
+|Log in link                |On page load       |Redirect to log in page            |Pass|
+|Register link              |On page load       |Redirect to registration page      |Pass|
+
+---
+
+### add_collection.html
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+| **Form**                  |                   |                                   |    |
+|Text input fields          |Type into          |Text appears, line highlights green|Pass|
+|Text input fields          |Leave blank        |Line highlights red                |Pass|
+|Text input fields          |Just input whitespace  |Line highlights red            |Pass|
+|Tooltips                   |Hover/click        |Reveal notes/instructions          |Pass|
+|Add collection btn(all fields correct)|Click   |Collection uploads to database     |Pass|
+|                           |                   |Redirect to all_collections page   |Pass|
+|                           |                   |"New Collection Added!" confirmation message|Pass|
+|Add collection btn(some incorrect fields)|Click|Page scrolls to incorrect fields   |Pass|
+
+---
+### **edit_collection.html**
+
+| Element                   | Action            | Expected Result                   | Pass/Fail  |
+|:-------------             |:-------------     |:-----                             |:-----|
+| **Form**                  |                   |                                   |    |
+|All fields                 |On page open       |Pre-populated with previous inputs |Pass|
+|Collection name input field|On click           |User unable to edit                |Pass|
+|Text input fields          |Type into          |Text appears, line highlights green|Pass|
+|Text input fields          |Leave blank        |Line highlights red                |Pass|
+|Text input fields          |Just input whitespace  |Line highlights red            |Pass|
+|Tooltips                   |Hover/click        |Reveal notes/instructions          |Pass|
+|Update btn(all fields correct)|Click           |Collection updates in database     |Pass|
+|                           |                   |Redirect to all_collections page   |Pass|
+|                           |                   |"Collection Updated!" confirmation message  |Pass|
+|Update btn(some incorrect fields)|Click        |Page scrolls to incorrect fields   |Pass|
+|Cancel btn                 |Click              |No changes made to collection      |Pass|
+|                           |                   |Redirect to all_collections page   |Pass|
 
 
+## Responsive Testing
+Through devices that I have at home/readily available to me, I was able to continuously test on:
+### Phone:
++ Samsung Galaxy S9
+  + Google Chrome
+  + Samsung Internet
++ Huawei Y7
+  + Google Chrome
++ iPhone 6
+  + Safari
+### Tablet
++ iPad Mini 7.9"
+  + Safari
++ iPad 9.7"
+  + Safari
+### Computer
+* Avita Pura 14" Laptop
+  * Google Chrome
+  * Microsoft Edge
+  * Opera
+  * Mozilla Firefox
+### Responsinator
++ When there were devices/browsers that I didn't have access to, I used [Responsinator](https://www.responsinator.com/) to make sure that the site was responsive.
+
+---
+---
 
 
 
